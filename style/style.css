@@ -1,5 +1,5 @@
 .background-gradiente {
-	background: linear-gradient(-45deg, #ee7752, #5a39ee, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #2d23e9, #6543ff, #3cafd8);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -29,5 +29,62 @@
 .end {
     display: flex;
     justify-content: flex-end;
-    margin-right: 8px;
+}
+
+.right {
+	margin-left: 1rem;
+}
+
+.witha {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.aumentar {
+	width: 70%;
+	position: relative;
+	left: 100px;
+	top: 100px;
+}
+
+.aumentar-2 {
+	width: 600px;
+	height: 500px;
+	background-color: rgb(42, 42, 42);
+	border-radius: 5%;
+}
+
+.tirar {
+	color: white;
+	text-decoration: none;
+}
+
+@media (max-width: 609px) {
+
+	.aumentar-2 {
+		width: 400px;
+	}
+
+	.aumentar {
+		width: 70%;
+		position: relative;
+		left: 60px;
+		top: 100px;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.aumentar-2 {
+		width: 300px;
+	}
+
+	.aumentar {
+		width: 60%;
+		position: relative;
+		left: 60px;
+		top: 100px;
+	}
 }
