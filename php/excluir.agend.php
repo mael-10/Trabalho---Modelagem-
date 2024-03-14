@@ -8,7 +8,7 @@
     include_once('conexao.php');
 
     // Verifica se os dados do formulário foram recebidos
-    if(isset($_POST['Cod_consulta'])) {
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recebe o código da consulta a ser excluída
         $data_consulta = $_POST['Data_consulta'];
         $motivo_consulta = $_POST['Motivo_consulta'];
@@ -24,8 +24,9 @@
         } else {
             echo "Ocorreu um erro ao excluir a consulta.";
         }
-    } else {
-        echo "Os dados do formulário não foram recebidos.";
+    }
+     else {
+       echo "Os dados do formulário não foram recebidos.";
     }
     ?>
 </body>

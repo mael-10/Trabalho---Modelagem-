@@ -9,15 +9,26 @@
 
     //Recebe os dados dos formulários            
 
-    $data = $_POST ['Data_consulta'];
+    $data = $_POST ['Data_Consulta'];
     $motivo = $_POST ['Motivo_consulta'];
     $data_formatada = date('Y-m-d', strtotime($data));
 
-     
+    $insere2 = mysqli_query($conexao, "SELECT cod_login_atendente FROM login_atendente");
+ 
 
-    $insere = mysqli_query($conexao,"INSERT INTO agendar_consulta(Data_consulta, Motivo_consulta)
-    VALUES ('$data_formatada ','$motivo')")
+    $cod_atendente = array();
+
+    while($row = mysqli_fetch_array($insere2)){
+        $cod_atendente[] = $row["cod_login_atendente"];
+    }
+
+
+    $insere = mysqli_query($conexao,"INSERT INTO agendar_consulta(Data_consulta, Motivo_consulta, Cod_login_atendente)
+
+    VALUES ('$data_formatada ','$motivo', '$cod_atendente[0]')")
     or die(mysqli_error());
+
+    
 
     
     echo "Data recebida: $data";
