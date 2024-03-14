@@ -1,0 +1,131 @@
+.background-gradiente {
+	background: linear-gradient(-45deg, #2d23e9, #6543ff, #3cafd8, #9f3cd8);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right {
+	margin-left: 1rem;
+}
+
+.witha {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.aumentar {
+	width: 70%;
+	position: relative;
+	left: 100px;
+	top: 100px;
+}
+
+.aumentar-2 {
+	width: 600px;
+	height: 500px;
+	background-color: rgb(42, 42, 42);
+	border-radius: 5%;
+}
+
+.tirar {
+	color: white;
+	text-decoration: none;
+}
+
+.teste-1 {
+	width: 70%;
+	position: relative;
+	left: 100px;
+	top: 35px;
+}
+
+.teste-2 {
+
+	width: 600px;
+	height: 580px;
+	background-color: rgb(42, 42, 42);
+	border-radius: 5%;
+}
+
+@media (max-width: 609px) {
+
+	.aumentar-2 {
+		width: 400px;
+	}
+
+	.aumentar {
+		width: 70%;
+		position: relative;
+		left: 60px;
+		top: 100px;
+	}
+
+	.teste-1 {
+		width: 70%;
+		position: relative;
+		left: 60px;
+		top: 35px;
+	}
+
+	.teste-2 {
+
+		width: 400px;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.aumentar-2 {
+		width: 300px;
+	}
+
+	.aumentar {
+		width: 60%;
+		position: relative;
+		left: 60px;
+		top: 100px;
+	}
+
+	.teste-1 {
+		width: 60%;
+		position: relative;
+		left: 60px;
+		top: 35px;
+	}
+
+	.teste-2 {
+
+		width: 300px;
+	}
+
+
+}
