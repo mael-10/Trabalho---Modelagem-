@@ -69,12 +69,20 @@
 }
 
 .teste-2 {
-
 	width: 600px;
 	height: 580px;
 	background-color: rgb(42, 42, 42);
 	border-radius: 5%;
 }
+
+body header {
+	background-color: rgb(42, 42, 42);
+}
+
+.background-screent {
+	height: 85.2vh;
+}
+
 
 @media (max-width: 609px) {
 
