@@ -34,12 +34,12 @@
                                             echo "  <input type ='text' name='nome_paciente' value = '".$resultado['Paciente']."'> ";
                                             echo " <label>Cpf</label>";
                                             echo "  <input type ='text' name='cpf_paciente' value = '".$resultado['Cpf']."'> ";
+                                            echo "<label>Telefone</label> ";
+                                            echo "  <input type ='text' name='tel_paciente' value = '".$resultado['Tel']."'> ";
                                             echo " <label>Email</label> ";
                                             echo "  <input type ='text' name='email' value = '".$resultado['Email']."'> ";
-                                            echo "<label>Telefone</label> ";
-                                            echo "  <input type ='text' name='cep' value = '".$resultado['Cep']."'> ";
                                             echo "<label>cep</label> ";
-                                            echo "  <input type ='text' name='tel_paciente' value = '".$resultado['Tel']."'> ";
+                                            echo "  <input type ='text' name='cep' value = '".$resultado['Cep']."'> ";
                                             echo "<label>Endereço</label>";
                                             echo "  <input type ='text' name='endereco' value = '".$resultado['Endereço']."'> ";
                                             echo " </table> ";
