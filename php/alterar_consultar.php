@@ -15,7 +15,6 @@
 									</div>
 									
 									<div>
-										<label>Data</label>
 										<?php
 											
 										// importa dados de conexÃ£o
@@ -38,8 +37,6 @@
 
 										<input type = "submit" value = "Consultar" class = "consultar" id="btn-cadastrar">
 
-										<div class="cadastrar-div">
-										</div>
 								</div>
 							</div>
 						</div>																		
